@@ -1,3 +1,4 @@
+import 'package:consume_api_app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class FirstScreen extends StatefulWidget {
@@ -70,7 +71,7 @@ class _FirstScreenState extends State<FirstScreen> {
           FloatingActionButton(
             heroTag: 'FirstScreen',
             onPressed: () {
-              Navigator.pushNamed(context, '/second');
+              Navigator.pushNamed(context, AppRoutes.secondRoute);
             },
             tooltip: 'Next Page',
             child: const Icon(Icons.navigate_next),
